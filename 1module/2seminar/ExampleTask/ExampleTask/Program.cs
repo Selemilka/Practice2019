@@ -9,7 +9,7 @@
 
 using System;
 
-namespace ExampleTask
+namespace ExampleTask1
 {
     class Program
     {
@@ -28,7 +28,7 @@ namespace ExampleTask
             }
             catch (FormatException) // Ошибка при форматировании числа (присутствуют не числа, число вещественное)
             {
-                Console.WriteLine("Ошибка при считывании числа!");
+                Console.WriteLine("Ошибка при считывании числа (это не число)!");
                 return;
             }
             catch (OverflowException ex) // Число вылезает за пределы границ инта
